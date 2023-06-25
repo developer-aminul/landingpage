@@ -82,3 +82,37 @@ font-size: 16px;
     font-size: 16px;
     color: #562EFF;
 }
+
+/*-------------------
+ Latest Courses Styles
+ -------------------- */
+ .courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 24px;
+ }
+.courses .course-banner img{
+    width: 266px;
+    height: 141px;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.course-author{
+    color: #ED6B4F;
+    font-size: 16;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.emty{
+    color: #AEAEAE
+}
+.course-duration{
+    background-color: #FF4A60;
+    padding: 5px;
+    border-radius: 30px;
+    color: #562EFF
+}

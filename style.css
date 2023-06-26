@@ -90,7 +90,17 @@ font-size: 16px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 24px;
+    
  }
+
+.course{
+    
+
+    /* text-align: center; */
+    padding: 5px;
+    
+}
+
 .courses .course-banner img{
     width: 266px;
     height: 141px;
@@ -115,4 +125,36 @@ font-size: 16px;
     padding: 5px;
     border-radius: 30px;
     color: #562EFF
+    
+}
+
+
+/* -----------
+media quary
+----------- */
+
+/* mobile device */
+@media only screen and (max-width:688px) {
+       .container{
+        width: 100%;
+       }
+       .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+       }
+       .player, .blog{
+        flex-direction: column;
+       }
+        
+}
+/* tablet devices */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    
+
+    }
 }

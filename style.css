@@ -6,11 +6,52 @@
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
+
 }
+/* -----------
+nav menu
+------------- */
+header{
+    background-color: #562EFF;
+}
+nav{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+nav .nav-logo img{
+    width: 40px;
+    height: 51px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo-title{
+    color: #ffffff;
+}
+.nav-menu{
+    display:flex;
+    align-items: center;
+    gap: 20px;  
+}
+.nav-menu a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.hader-menu{
+    display: flex;
+    gap: 30px;
 }
 .container{
     background-color:#ffffff;
@@ -38,6 +79,7 @@ hr{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-row-gap: 30px;
+    grid-column-gap: 60px;
 }
 .player{
     display: flex;
